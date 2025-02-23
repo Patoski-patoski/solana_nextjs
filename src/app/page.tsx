@@ -1,4 +1,5 @@
-// page.tsx
+// src/app/page.tsx
+
 "use client";
 
 import { useMemo } from "react";
@@ -21,6 +22,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 
 import CreateWallet from "./components/CreateWallet";
 import ConnectWalletInfo from "./components/ConnectWallet";
+
 
 const App = () => {
   const network = WalletAdapterNetwork.Devnet;

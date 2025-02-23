@@ -34,6 +34,7 @@ const ConnectWalletInfo = () => {
     }
   }, [walletAddress]);
 
+
   return (
     <div className="flex flex-col items-center p-6 bg-gray-800 text-white rounded-lg">
       <h2 className="text-2xl mb-4">Connect Your Solana Wallet</h2>

@@ -45,14 +45,11 @@ const CreateWallet = () => {
          setCopied(true);
          setTimeout(() => setCopied(false), 2000);
         console.log("Address copied to clipboard!");
-        // Success message
       } catch (err) {
         console.error("Error copying address: ", err);
-        // Error message
       }
     } else {
       console.error("Clipboard API not supported in this browser.");
-      // Inform the user
     }
   };
 

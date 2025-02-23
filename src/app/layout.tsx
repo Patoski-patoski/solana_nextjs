@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "./components/navigation";
+import { ToasterProvider } from "./components/providers/toaster-provider"; // Add this import
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,9 +32,8 @@ export default function RootLayout({
         <header className="bg-amber-950 text-white p-4 text-center">
           <Navigation />
         </header>
-
+        <ToasterProvider />
         {children}
-
       </body>
     </html>
   );
