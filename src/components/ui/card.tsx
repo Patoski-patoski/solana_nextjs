@@ -9,7 +9,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ children, className }) => {
   return (
     <div
-      style={{ backgroundColor: "#512da8" }}
+      style={{ backgroundColor: "#3D8D7A" }}
       className={`grid shadow-md rounded-lg p-4 ${className}`}
     >
       {children}
